@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/js/employee-list-item.js"></script>
+    <script src="/js/create-employee-form.js"></script>
+    <script src="/js/app.js"></script>
+    <link rel="stylesheet" href="/css/company.css">
+    <title>Document</title>
+
+    <template class='employee-card'>
+        <div class='employee card' data-id=''">
+            <h1 class='name'></h1>
+            <p class='email'></p>
+            <p class='phone'></p>
+            <p class='department_id'></p>
+            <img src=''>
+        </div>
+    </template>
+
+</head>
+<body>
+    <main>
+        <h3>Birth an employee</h3>
+        <form method="post">
+            <div>
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="email" placeholder="Email Adress">
+                <input type="text" name="phone-number" placeholder="Phone Number">
+                <input type="text" name="department-id" placeholder="Department ID">
+                <input type="text" name="img" placeholder="Image">
+                <input type="submit" value="Create" class="formBtn">
+            </div>
+        </form>
+        <ul class="dataList">
+        </ul>
+
+        <div class="userData">
+        </div>
+
+    </main>
+</body>
+
+<script>
+    window.onload = function() {
+        index()
+    }
+</script>
+</html>
+
